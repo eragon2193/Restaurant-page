@@ -1,0 +1,150 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('../src/background.png');
+  background-repeat: no-repeat;
+  display:grid;
+  background-color: #131313;
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 550px 1fr;
+}
+header{
+  width:100%;
+  height:150px;
+  background-image: url('../src/header.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  position:fixed;
+  z-index:1;
+  grid-area: 1 / 1 / 2 / 3
+}
+#content{
+  background-color: rgb(35,35,35);
+  width:1200px;
+  min-height:700px;
+  margin-bottom:50px;
+  grid-area: 2 / 2 / 3 / 3
+  
+}
+
+ul{
+  font-weight: 800;
+  list-style: none;
+  display:flex;
+  justify-content: space-evenly;
+  font-size:40px
+}
+li{
+  padding:10px;
+}
+li:hover{
+  color:white;
+  cursor:pointer;
+}
+.menu{
+  padding:25px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.food-card{
+  border:10px solid white;
+  display:flex;
+  align-items: center;;
+  justify-content: space-evenly;
+  background-color:brown;
+  width:80%;
+  height:350px;
+  margin:50px;
+
+}
+.food-text{
+  display:Flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 3px 4px 0.5px rgba(128, 0, 0, 1);
+}
+.food-text>*{
+  padding:20px;
+}
+.food-text>p{
+  font-size:2.5rem;
+}
+.food-text>h3{
+  font-size:3rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+img{
+  width:350px;
+  height:300px;
+}
+.menu :nth-child(even){
+  flex-direction:row-reverse
+}
+.about-us{
+  font-size:2rem;
+  text-align: center;
+  padding:10%;
+  padding-top:0;
+  color:firebrick;
+}
+.about-us>p{
+  padding: 50px 10px;
+}
+.about-us>p::first-letter{
+  font-size:2.8rem;
+}
+.contact-us{
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+  padding:20px;
+}
+.contact-us>p{
+  font-size:2.2rem;
+  text-align:start;
+  color:firebrick;
+}
+.contact-us>*{
+  padding:20px;
+}
+form>h2{
+  text-align: center;
+  font-size:2rem;
+  color:white;
+  padding-bottom:50px;
+}
+form{
+  margin:auto;
+  width:50%;
+  display:grid;
+}
+form>label{
+  font-size:2rem;
+  color:red;
+  padding:10px;
+  text-align: center;
+}
+form>input{
+  margin-bottom:30px;
+  font-size:1.5rem;
+  padding:3px;
+}
+form>textarea{
+  padding:3px;
+  font-size:20px;
+}
+form>button{
+  width:120px;
+  height:40px;
+  font-size:2rem;
+  margin:auto;
+  margin-top:5px;
+}
+
+
+

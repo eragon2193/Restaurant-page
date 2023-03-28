@@ -33,7 +33,7 @@ const createFoodCard = (type) =>{
   const foodPrice = document.createElement('p')
   foodPrice.innerText = type.price
   const img = document.createElement('img')
-  img.src = `../src/${type.image}.jpg`
+  img.src = `./src/${type.image}.jpg`
   foodText.append(foodName,foodPrice)
   card.append(foodText, img)
   menu.append(card)

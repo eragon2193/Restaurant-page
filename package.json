@@ -2,15 +2,21 @@
   "name": "restaurant-page",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "url": "git+https://github.com/eragon2193/Restaurant-page.git"
+  },
   "main": "app.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^5.76.0",
     "webpack-cli": "^5.0.1"
   }
